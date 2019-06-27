@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastro">
+
+    <ScrollView
+        android:id="@+id/scrol"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cadastre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastre-se"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="34dp" />
+
+            <TextView
+                android:id="@+id/nometext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="65dp" />
+
+            <EditText
+                android:id="@+id/nomeedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/datadenasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data de nascimento:" />
+
+            <EditText
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Data"
+                android:inputType="date"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <TextView
+                android:id="@+id/sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo" />
+
+            <RadioButton
+                android:id="@+id/masc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                tools:layout_editor_absoluteX="216dp"
+                tools:layout_editor_absoluteY="192dp" />
+
+            <RadioButton
+                android:id="@+id/fem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminino"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="192dp" />
+
+            <TextView
+                android:id="@+id/emailcadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/emailcadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/graduacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graduação" />
+
+            <CheckBox
+                android:id="@+id/ensinof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ensino Fundamental Completo" />
+
+            <CheckBox
+                android:id="@+id/ensinom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ensino Médio Completo" />
+
+            <CheckBox
+                android:id="@+id/graduado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graduação Completa" />
+
+            <TextView
+                android:id="@+id/especializacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Possui especialização?Se sim, qual?"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="415dp" />
+
+            <EditText
+                android:id="@+id/editespec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/horario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horário de atendimento" />
+
+            <EditText
+                android:id="@+id/atendi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefone" />
+
+            <EditText
+                android:id="@+id/telefoneedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/digitesenh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digite uma senha" />
+
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/confirmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirme sua senha" />
+
+            <EditText
+                android:id="@+id/confirmarsenh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/botaocadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Cadastrarse"
+                android:text="Cadastre-se" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Treino.TreinoPrincipal">
+
+            <!-- TODO: Update blank fragment layout -->
+
+
+            <EditText
+                android:id="@+id/datatreino"
+                android:layout_width="271dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Data: dd/mm/AAAA"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="108dp"
+                android:text="Índice de oxigênio:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/indiceoxigenio"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="98dp"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="175dp"
+                android:text="Pressão:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/pressao"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="165dp"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="240dp"
+                android:text="Tipo de treino:"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="400dp"
+                android:text="Exercícios"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="355dp"
+                android:layout_height="121dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="270dp">
+
+                <RadioButton
+                    android:id="@+id/aerobicoradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aeróbico" />
+
+                <RadioButton
+                    android:id="@+id/anaerobicoradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Anaeróbico" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/calendariofragment"
+                android:layout_width="63dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="15dp"
+                android:src="@android:drawable/ic_menu_month" />
+
+
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Treino.TreinoPrincipal">
+
+            <!-- TODO: Update blank fragment layout -->
+
+            <CheckBox
+                android:id="@+id/supino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Supino"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesupino"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaosupino"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="85dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="140dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesosupino"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="128dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/levantamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="180dp"
+                android:text="Levantamento"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="220dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/serieslevantamento"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="210dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="260dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaolevantamento"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="300dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesolevantamento"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="290dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/barrafixa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="345dp"
+                android:text="Barra"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="390dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesbarra"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="375dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="430dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaobarra"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="415dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/voador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:text="Voador"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="60dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/serievoador"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="100dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaovoador"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="85dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="140dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesovoador"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="262dp"
+                android:layout_marginTop="128dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/abdominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="180dp"
+                android:text="Abdominal"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="220dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesabdominal"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="205dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="260dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaoabdominal"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="300dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesoabdominal"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="290dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/flexao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="345dp"
+                android:text="Flexão"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="390dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesflexao"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="370dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="430dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaoflexao"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="415dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/frame3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Treino.TreinoPrincipal">
+
+            <!-- TODO: Update blank fragment layout -->
+            <CheckBox
+                android:id="@+id/agachamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Agachamento Sissy"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesissy"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaosissy"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="85dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="140dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesosissy"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="128dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/agachamentopeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="180dp"
+                android:text="Agachamento Peso"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="220dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesagachamentopeso"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="205dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="260dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaoagachamentopeso"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="300dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesoagachamentopeso"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="290dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/corda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="345dp"
+                android:text="Corda"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="390dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriescorda"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="373dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="430dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaocorda"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="415dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/leg45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:text="Leg Press 45"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="60dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/serieleg45"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="100dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaoleg45"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="85dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="140dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesoleg45"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="262dp"
+                android:layout_marginTop="128dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/leg90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="180dp"
+                android:text="Leg Press 90"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="220dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriesleg90"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="210dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="260dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaoleg90"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="300dp"
+                android:text="Peso:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/pesoleg90"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="290dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/cordanaval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="345dp"
+                android:text="Corda Naval"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="390dp"
+                android:text="Séries:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/seriescordanaval"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="380dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="430dp"
+                android:text="Repetições:"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/repeticaocordanaval"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="415dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+        </FrameLayout>
+
+    </TableLayout>
+
+</ScrollView>

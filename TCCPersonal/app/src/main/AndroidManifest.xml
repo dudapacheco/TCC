@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eduar.tcc_personal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logolindo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="FitLife">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login" />
+        <activity android:name=".tela1" />
+        <activity
+            android:name=".cadastroEvolucao"
+            android:label="Cadastrar Evolução"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".navi"
+            android:label="Página Inicial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".avaliacao"
+            android:label="Avaliação"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".cadastro"
+            android:label="Cadastrar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Listas.listar_evolu"
+            android:label="Evolução"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".Listas.listar_dicas"
+            android:label="Treino"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".Listas.listar_avalia"
+            android:label="Avaliação"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".Personal.AlterarInfo"
+            android:label="Alterar Informações"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".Activitys.ResetSenha"
+            android:label="Resetar Senha"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Aluno.CadastroAluno"
+            android:label="Cadastrar Aluno"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".Aluno.AlterarInfoAluno"
+            android:label="Alterar Informações"
+            android:parentActivityName=".Listas.testelistar" />
+        <activity
+            android:name=".Listas.testelistar"
+            android:label="Meus Alunos"
+            android:parentActivityName=".Aluno.CadastroAluno" />
+        <activity
+            android:name=".Activitys.HistoricoEvolucao"
+            android:label="Histórico de Evolução"
+            android:parentActivityName=".cadastroEvolucao" />
+
+        <activity
+            android:name=".Activitys.HistoricoDicas"
+            android:label="Histórico Dicas"
+            android:parentActivityName=".Listas.listar_dicas" />
+
+        <activity
+            android:name=".Activitys.HistoricoAvalia"
+            android:label="Histórico de Avaliação"
+            android:parentActivityName=".avaliacao" />
+
+        <activity
+            android:name=".Detalhes.DetalheAvaliacao"
+            android:label="Detalhes"
+            android:parentActivityName=".Listas.listar_avalia" />
+        <activity
+            android:name=".Detalhes.DetalheTreino"
+            android:label="Detalhes"
+            android:parentActivityName=".Listas.listar_dicas" />
+        <activity
+            android:name=".Detalhes.DetalheEvolucao"
+            android:label="Detalhes"
+            android:parentActivityName=".Activitys.HistoricoEvolucao" />
+        <activity
+            android:name=".Evolucao.Alterarevolu"
+            android:label="Alterar Evolução"
+            android:parentActivityName=".Activitys.HistoricoEvolucao" />
+        <activity
+            android:name=".Avaliacao.Alteraravalia"
+            android:label="Alterar Avaliação"
+            android:parentActivityName=".Activitys.HistoricoAvalia" />
+        <activity
+            android:name=".Detalhes.DetalheAluno"
+            android:label="Detalhes"
+            android:parentActivityName=".Listas.testelistar" />
+        <activity
+            android:name=".Marcar.CadastrarTreino"
+            android:label="Agendar treino"
+            android:parentActivityName=".tela1" />
+        <activity
+            android:name=".Listas.ListarHorarios"
+            android:label="Agenda"
+            android:parentActivityName=".Listas.ListarHorarios" />
+        <activity
+            android:name=".CalendarActivity"
+            android:label="Calendário" />
+        <activity android:name=".Marcar.AlterarMarcacao"
+            android:label="Alterar horário"
+            android:parentActivityName=".Listas.ListarHorarios"/>
+        <activity android:name=".Treino.TreinoPrincipal"
+            android:label="Cadastrar treino"
+            android:parentActivityName=".Listas.listar_dicas"/>
+        <activity android:name=".Treino.TreinoAlterar"
+            android:label="Alterar treino"
+            android:parentActivityName=".Activitys.HistoricoDicas"></activity>
+    </application>
+
+</manifest>
